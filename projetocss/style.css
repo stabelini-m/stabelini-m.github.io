@@ -1,5 +1,9 @@
 .body {
   background: linear-gradient( to left, #2e2e2e, #878484);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -12,12 +16,21 @@
 }
 
 .album{
-  margin: auto;
-  
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  min-width: 200px;
 }
 
 .album-image {
-  width: 20%;
+  width: 100%;
   min-width: 200px;
   box-shadow: 10px 10px 20px 10px #010101;
+}
+
+.header {
+  background: linear-gradient(to right, #000000, #252424);
+  text-align: center;
+  color: white;
+  font-size: 2em;
 }
