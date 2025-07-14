@@ -1,0 +1,23 @@
+.body {
+  background: linear-gradient( to left, #2e2e2e, #878484);
+}
+
+.container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  margin: auto;
+}
+
+.album{
+  margin: auto;
+  
+}
+
+.album-image {
+  width: 20%;
+  min-width: 200px;
+  box-shadow: 10px 10px 20px 10px #010101;
+}
