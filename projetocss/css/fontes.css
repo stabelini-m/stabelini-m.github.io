@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Death Mohawk';
+    src: url('../Fontes/DeathMohawk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Old London';
+    src: url('../Fontes/OldLondon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
