@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Maneskin </title>
+    <link rel="stylesheet" href="estilizacao.css">
+    <link rel="icon" href="./Imagens/logo.png">
+    <script src="script.js"></script>
+</head>
+<body class="body">
+    <header id="header">
+        <div class="mobileMenu">
+			<p onclick="sidebar_close_open()"> 
+				≡ 
+			</p>
+		</div>
+		<div class="sidebar">
+			<h2> Menu: </h2>
+			<button class="sidebar_itens"> <a href='index.html'>Home</a> </button>
+			<button class="sidebar_itens"> <a href='albuns.html'>Álbuns</a> </button>
+			<button class="sidebar_itens"> <a href='membros.html'>Membros</a> </button>
+			<button class="sidebar_itens"> <a href='historia.html'>História</a> </button>
+			<button class="sidebar_itens"> <a href='midias.html'>Mídias</a> </button>
+			<button class="sidebar_itens"> <a href='cadastro.html'>Cadastre-se</a> </button>
+		</div>
+        <br>
+		<h1> Cadastro</h1>
+		<br>
+			<div class="headerNav">
+				<button> <a href='home.html'style='color: white; font-size: 18px'>Home</a> </button>
+				<button> <a href='albuns.html' style='color: white; font-size: 18px'>Álbuns</a> </button>
+				<button> <a href='membros.html'style="color: white; font-size: 18px">Membros</a> </button>
+				<button> <a href='historia.html'style="color: white; font-size: 18px">História</a> </button>
+				<button> <a href='midias.html'style="color: white; font-size: 18px">Mídias</a> </button>
+			</div>
+		</header>
+	</header>
+    <fieldset>
+    <legend>Informações Pessoais</legend>
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text"; id="name"; name="name"; placeholder="Digite seu nome" required>
+        <br><br>
+        <label for="age">Idade:</label>
+        <input type="number"; id="age"; name="age"; placeholder="Digite a sua idade">
+        <br><br>
+        <label for="birth">Data de Nascimento: </label>
+        <input type="date" id="birth" name="birth" required>
+        <br><br>
+        <label for="gender">Sexo:</label>
+        <br><br>
+        M <input type="radio" id="gender" name="gender" value="M" required> 
+        <br>
+        F <input type="radio" id="gender" name="gender" value="F" required> 
+    </fieldset>
+    <fieldset>
+        <legend> Data </legend>
+            <label for="date">Data do Cadastro:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+            <label for="time">Horário do Cadastro</label>
+            <input type="time" id="time" name="time">
+            <br><br>
+            <label for="month">Mês</label>
+            <input type="month" id="month" name="month">
+            <br><br>
+            <label for="week">Semana:</label>
+            <input type="week" id="week" name="week">
+            <br><br>
+            <label for="datespecific">Data e Hora: </label>
+            <input type="datetime-local" id="datespecific" name="datespecific" required>
+    </fieldset>
+    <fieldset>
+        <legend>Informações de Cadastro</legend>
+        <label for="login">Login: </label>
+        <input type="login" id="login" name="login" placeholder="Digite seu e-mail ou telefone">
+        <br><br>
+        <label for="pass">Senha:</label>
+        <input type="password" id="pass" name="pass" placeholder="A senha deve ter entre 8 e 16 caracteres" minlength="8" maxlength="16">
+    </fieldset>
+    <fieldset>
+        <legend>Informações de Fã</legend>
+        <label for="fan">O quão fã você é? </label>
+        0% <input type="range" id="fan" name="fan"> 100%
+        <br><br>
+        <label for="musica">Música Favorita</label>
+        <select id="musica" name="musica">
+            <option></option>
+            <optgroup label="Chosen">
+                <option>Beggin</option>
+                <option> Chosen </option>
+                <option> Let's Get it Started </option>
+                <option>Recovery</option>
+                <option>Somebody Told Me</option>
+                <option>Vengo dalla Luna</option>
+                <option>You Need Me, I Don't Need You</option>
+            </optgroup>
+            <optgroup label="Il ballo della vita">
+                <option>New Song</option>
+                <option>L'altra dimenzione</option>
+                <option>Are you Ready?</option>
+                <option>Torna a casa</option>
+                <option>Close to The Top</option>
+                <option>Fear for Nobody</option>
+                <option>Morirò da re</option>
+                <option>Sh*t blvd</option>
+                <option>Niente da dire</option>
+                <option>Immortale (feat. Vegas Jones)</option>
+                <option>Lasciame stare</option>
+                <option>Le parole lontane</option>
+            </optgroup>
+            <optgroup label="Teatro d'ira: Vol. I">
+                <option>Coraline</option>
+                <option>For Your Love</option>
+                <option>Vent'Anni</option>
+                <option>In nome del padre</option>
+                <option>I wanna be your slave</option>
+                <option>La paura del buio</option>
+                <option>Zitti e Buoni</option>
+                <option>Lividi sui gomiti</option>
+            </optgroup>
+            <optgroup label="Rush!">
+                <option>Gasoline</option>
+                <option>Supermodel</option>
+                <option>Timezone</option>
+                <option>Baby Said</option>
+                <option>The Loneliest</option>
+                <option>Kool Kids</option>
+                <option>La fine</option>
+                <option>Feel</option>
+                <option>Gossip (feat. Tom Morello)</option>
+                <option>Bla Bla Bla</option>
+                <option>Timezone</option>
+                <option>Il dono della vita</option>
+                <option>Don't Wanna Sleep</option>
+                <option>Mark Chapman</option>
+                <option>If Not for You</option>
+                <option>Read Your Diary</option>
+                <option>Own my Mind</option>
+            </optgroup>
+            <optgroup label="Rush! (Are U Coming?)">
+                <option>Honey (Are u Coming?)</option>
+                <option>Valentine</option>
+                <option>Off My Face</option>
+                <option>The Driver</option>
+                <option>Trasteverse</option>
+            </optgroup>
+            </select>
+            <br><br>
+            <label for="membro">Membro Favorito: </label><br>
+            <select id="membro" name="membro" size="4">
+                <option>Damiano David</option>
+                <option>Victoria de Angelis</option>
+                <option>Ethan Thorchio </option>
+                <option>Thomas Raggi </option>
+            </select>
+        <br><br>
+        <input type="checkbox" id="news" name="news" value="news">
+        <label for="news">Deseja receber novidades sobre a banda?</label>
+        <br><br>
+        <input type="checkbox" id="termos" name="termos" value="termos">
+        <label for="termos">Li e aceito os <a href="termosdeuso.html">termos de uso</a></label>
+        </fieldset>
+    <br>
+        <input type="reset" id="reset" name="reset" value="Limpar">
+        <input type="submit" id="submit" name="submit" value="Cadastrar"> 
+    </form>
+</body>
+</html>
