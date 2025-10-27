@@ -1,0 +1,172 @@
+button{
+		background-color: black;
+		color: white;
+}
+h1,h2,h3,h4,h5,h6{
+	text-align: center;
+}
+.member{
+	text-align: justify;
+	margin: 0;
+}
+.member img{
+	width: 100%;
+	aspect-ratio: 10/7;
+}
+
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+.container button:hover{
+	transform: scale(1.1);
+}
+html{
+	height: 100%;
+}
+p{
+	font-size: 20px;
+}
+#returnNav {
+	word-spacing: 40px;
+	background-color: black;
+}
+#returnNav button{
+	color: white
+}
+header{
+	background-color: black;
+	color: white;
+    word-spacing: 50px;
+    font-size: 20px;
+}
+.body{
+	background-color: lightgray; 
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+}
+.headerButtons {
+	color: white;
+	font-size: 18px;
+	transition: transform 0.2s ease;
+}
+.albuns {
+	font-size: 28px;
+}
+.container, .membersNav {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+ .mobileMenu {
+	font-size: 32px;
+	top: 0px;
+	position: fixed;
+	cursor: pointer;
+}
+.mobileMenu.left {
+    left: 20px;
+    right: auto;
+}
+
+.mobileMenu.right {
+    right: 20px;
+    left: auto;
+}
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.headerNav {
+		display: none;
+	}
+	.member{
+		width: 100%;
+	}
+}
+.membersNav{
+	position: sticky;
+	z-index: 1;
+}
+ @media screen and (min-width: 768px) {
+	.container {
+		flex-direction: row;
+	}
+	.headerNav {
+		display: block;
+	}
+	.mobileMenu, .mobileOnly{
+		display: none;
+	}
+	.member{
+		width: 20%;
+	}
+ }
+ input[type="text"]:focus, input[type="login"]:focus, input[type="password"]:focus{
+	width: 60%;
+	max-width: 200px;
+	min-width: 100px;
+ }
+ input:focus, select:focus, textarea:focus{
+	border: 2px solid black;
+ }
+ fieldset{
+	margin-bottom: 2vh;
+ }
+ .sidebar{
+	position: fixed;
+	top: 0;
+	width: 50%;
+	display: none;
+	background: black;
+	height: 100%;
+	flex-direction: column; 
+	box-sizing: border-box;
+    justify-content: space-between; 
+    align-items: stretch;
+	padding: 20px;
+	z-index: 2;
+ }
+ .sidebar_itens{
+	display: block;
+	margin: 0;
+ }
+ .sidebar_itens:hover{
+	transform: scale(1.1);
+ }
+header h1{
+	text-align: center;
+}
+label, input, select{
+	display: block;
+}
+input, select{
+	margin-bottom: 2vh;
+}
+input[type="range"], input[type="radio"], input[type="checkbox"]{
+	display: inline-block;
+}
+
+.block {
+	display: block;
+}
+
+iframe {
+	border: none;
+	width: 80%;
+	height: 40vh;
+}
+
+object {
+	width: 100%;
+	height: 100%;
+}
