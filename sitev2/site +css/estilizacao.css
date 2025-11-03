@@ -257,3 +257,20 @@ object {
 	width: 100%;
 	height: 100%;
 }
+
+@media print {
+
+	.mobileMenu,
+	header *:not(.titulo),
+	.sidebar,
+	iframe,
+	#returnNav {
+		display: none;
+	}
+
+	.titulo {
+		display: block;
+		font-weight: bolder;
+		color: black;
+	}
+}
